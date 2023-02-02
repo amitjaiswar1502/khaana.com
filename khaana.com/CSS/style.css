@@ -1,0 +1,265 @@
+/* CSS reset==== */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ===CSS variable=== */
+
+/* ===Navbar ==== */
+#navbar {
+   
+    display: flex;
+    position: sticky;
+    align-items: center;
+    top: 0;
+    z-index: 1
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+/* === Navbar Logo & image== */
+#logo {
+    margin: 10px 35px;
+}
+
+#logo img {
+    height: 40px;
+    margin: 10px 10px;
+    border-radius: 50%; 
+
+}
+
+/* ==Navbar List item style */
+#navbar ul {
+    display: flex;
+    padding: 27px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+/* ====Home Section=== */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 731px;
+}
+
+#home::before{
+    content: "";
+    background: url('../images/bg-1.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 88%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* ===sevices section==== */
+#services{
+    margin: 30px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid brown;
+    padding: 14px 50px;
+    margin: 0 35px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    background-color: rgb(235, 218, 218);
+    
+}
+#services .box img{
+    height: 200px;
+    margin: auto;
+    display: block;
+}
+
+#services .p {
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* //===client section=== */
+#client-section{
+    position: relative;
+   
+}
+
+#client-section::before{
+    content: "";
+    background: url('../images/bg2.jpg') no-repeat center center/cover ;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#client-item{
+    padding: 34px;
+}
+
+.clients img{
+    height: 150px;
+}
+
+/* contact section */
+#contact{
+
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url('../images/contact-us.jpg') no-repeat center center/cover ;
+    
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 9px;
+}
+
+
+/* ===footer=== */
+footer {
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+
+/* ===utility class==== */
+.h-primary {
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+p{
+    line-height: 1.5rem;
+    text-align: center !important;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: white solid;
+    background-color: brown;
+    color: white;
+    margin: 20px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: white;
+    color: brown;
+}
+
+#submit-btn{
+    padding: 6px 20px ;
+    width: 15%;
+    color: white;
+    border: white solid;
+    background-color: rgb(7, 164, 243);
+    display: block;
+    margin: auto;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#submit-btn:hover{
+    background-color: white;
+    color: rgb(7, 164, 243);
+}
+
+.center{
+    text-align: center;
+}
